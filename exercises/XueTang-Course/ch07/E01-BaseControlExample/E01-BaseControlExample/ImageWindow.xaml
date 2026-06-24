@@ -1,0 +1,21 @@
+﻿<Window x:Class="E01_BaseControlExample.ImageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:E01_BaseControlExample"
+        mc:Ignorable="d"
+        Title="ImageWindow" Height="450" Width="800">
+    <StackPanel>
+        <StackPanel.Resources>
+            <Style TargetType="Image">
+                <Setter Property="Margin" Value="5"/>
+                <Setter Property="Width" Value="80"/>
+            </Style>
+        </StackPanel.Resources>
+        <WrapPanel>
+            <Image Source="1.png" Stretch="Fill" Width="150"/>
+            <Image Source="1.jpg" Width="100" Height="100"/>
+        </WrapPanel>
+    </StackPanel>
+</Window>

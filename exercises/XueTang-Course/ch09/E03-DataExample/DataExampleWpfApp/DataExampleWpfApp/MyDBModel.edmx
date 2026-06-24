@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MyDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CJ">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Xuehao" Type="nchar" MaxLength="8" Nullable="false" />
+          <Property Name="KechengBianma" Type="nchar" MaxLength="3" />
+          <Property Name="Xueqi" Type="nvarchar" MaxLength="50" />
+          <Property Name="Xiuduleibie" Type="nvarchar" MaxLength="10" />
+          <Property Name="Chengji" Type="int" />
+          <Property Name="Beizhu" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="KC">
+          <Key>
+            <PropertyRef Name="KCBianma" />
+          </Key>
+          <Property Name="KCBianma" Type="nchar" MaxLength="3" Nullable="false" />
+          <Property Name="KCMingCheng" Type="nvarchar" MaxLength="50" />
+          <Property Name="KCLeibie" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Student">
+          <Key>
+            <PropertyRef Name="Xuehao" />
+          </Key>
+          <Property Name="Xuehao" Type="nchar" MaxLength="8" Nullable="false" />
+          <Property Name="Xingming" Type="nvarchar" MaxLength="50" />
+          <Property Name="Xingbie" Type="nchar" MaxLength="1" />
+          <Property Name="Chushengriqi" Type="date" />
+          <Property Name="Photo" Type="varbinary(max)" />
+        </EntityType>
+        <EntityContainer Name="MyDBModelStoreContainer">
+          <EntitySet Name="CJ" EntityType="Self.CJ" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KC" EntityType="Self.KC" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MyDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CJ">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Xuehao" Type="String" MaxLength="8" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="KechengBianma" Type="String" MaxLength="3" FixedLength="true" Unicode="true" />
+          <Property Name="Xueqi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Xiuduleibie" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Chengji" Type="Int32" />
+          <Property Name="Beizhu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="KC">
+          <Key>
+            <PropertyRef Name="KCBianma" />
+          </Key>
+          <Property Name="KCBianma" Type="String" MaxLength="3" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="KCMingCheng" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KCLeibie" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Student">
+          <Key>
+            <PropertyRef Name="Xuehao" />
+          </Key>
+          <Property Name="Xuehao" Type="String" MaxLength="8" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Xingming" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Xingbie" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="Chushengriqi" Type="DateTime" Precision="0" />
+          <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityContainer Name="MyDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CJ" EntityType="Self.CJ" />
+          <EntitySet Name="KC" EntityType="Self.KC" />
+          <EntitySet Name="Student" EntityType="Self.Student" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MyDBModelStoreContainer" CdmEntityContainer="MyDBEntities">
+          <EntitySetMapping Name="CJ">
+            <EntityTypeMapping TypeName="MyDBModel.CJ">
+              <MappingFragment StoreEntitySet="CJ">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Xuehao" ColumnName="Xuehao" />
+                <ScalarProperty Name="KechengBianma" ColumnName="KechengBianma" />
+                <ScalarProperty Name="Xueqi" ColumnName="Xueqi" />
+                <ScalarProperty Name="Xiuduleibie" ColumnName="Xiuduleibie" />
+                <ScalarProperty Name="Chengji" ColumnName="Chengji" />
+                <ScalarProperty Name="Beizhu" ColumnName="Beizhu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KC">
+            <EntityTypeMapping TypeName="MyDBModel.KC">
+              <MappingFragment StoreEntitySet="KC">
+                <ScalarProperty Name="KCBianma" ColumnName="KCBianma" />
+                <ScalarProperty Name="KCMingCheng" ColumnName="KCMingCheng" />
+                <ScalarProperty Name="KCLeibie" ColumnName="KCLeibie" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Student">
+            <EntityTypeMapping TypeName="MyDBModel.Student">
+              <MappingFragment StoreEntitySet="Student">
+                <ScalarProperty Name="Xuehao" ColumnName="Xuehao" />
+                <ScalarProperty Name="Xingming" ColumnName="Xingming" />
+                <ScalarProperty Name="Xingbie" ColumnName="Xingbie" />
+                <ScalarProperty Name="Chushengriqi" ColumnName="Chushengriqi" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

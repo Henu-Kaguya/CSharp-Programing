@@ -1,0 +1,57 @@
+﻿<Page x:Class="DrawShapesExample.Ch05.E06DrawDemo"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DrawShapesExample.Ch05"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="E06DrawDemo">
+    <StackPanel>
+        <StackPanel.Resources>
+            <Style TargetType="Button">
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="Margin" Value="0 20 0 5"/>
+                <Setter Property="Padding" Value="10 2"/>
+            </Style>
+            <Style TargetType="Image">
+                <Setter Property="Width" Value="100"/>
+                <Setter Property="Height" Value="60"/>
+                <Setter Property="Margin" Value="5"/>
+            </Style>
+            <Style TargetType="Border">
+                <Setter Property="BorderBrush" Value="Chocolate"/>
+                <Setter Property="BorderThickness" Value="1"/>
+            </Style>
+        </StackPanel.Resources>
+        <TextBlock Text="类继承-几何绘图"/>
+        <WrapPanel>
+            <StackPanel>
+                <Button Name="btnLine" Content="直线"/>
+                <Border> <Image Name="image1"/></Border>
+            </StackPanel>
+            <StackPanel>
+                <Button Name="btnRectangle" Content="矩形"/>
+                <Border><Image Name="image2"/></Border>
+            </StackPanel>
+            <StackPanel>
+                <Button Name="btnEllipse" Content="椭圆"/>
+                <Border><Image Name="image3"/></Border>
+            </StackPanel>
+            <StackPanel>
+                <Button Name="btnCircle" Content="圆"/>
+                <Border><Image Name="image4"/></Border>
+            </StackPanel>
+            <StackPanel>
+                <Button Name="btnArrowLine" Content="箭头直线"/>
+                <Border><Image Name="image5"/></Border>
+            </StackPanel>
+        </WrapPanel>
+        <StackPanel>
+            <Button Name="btnSin" Content="正弦曲线" HorizontalAlignment="Left"/>
+            <Border Width="560" HorizontalAlignment="Left">
+                <Image Name="image6" Width="500" Height="100"/>
+            </Border>
+        </StackPanel>
+    </StackPanel>
+</Page>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="E02_LinqDataBaseExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:E02_LinqDataBaseExample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="480.569" Width="847.652">
+    <Grid>
+        <Grid Margin="10,-1,-9.333,0.333">
+            <Button Tag="E1" Content="初始化数据" HorizontalAlignment="Left" Margin="201,54,0,0" VerticalAlignment="Top" Width="382" FontSize="20" Click="Button_Click"/>
+            <Button Tag="E2" Content="使用SQL命令查询数据库" HorizontalAlignment="Left" Margin="201,111,0,0" VerticalAlignment="Top" Width="382" FontSize="20" Click="Button_Click"/>
+            <Button Tag="E3" Content="使用SQL命令增删改数据库" HorizontalAlignment="Left" Margin="201,168,0,0" VerticalAlignment="Top" Width="382" FontSize="20" Click="Button_Click"/>
+            <Button Tag="E4" Content="LINQ to Entities 查询数据库" HorizontalAlignment="Left" Margin="201,226,0,0" VerticalAlignment="Top" Width="382" FontSize="20" Click="Button_Click"/>
+            <Button Tag="E5" Content="LINQ to Entities 增删改数据库" HorizontalAlignment="Left" Margin="201,284,0,0" VerticalAlignment="Top" Width="382" FontSize="20" Click="Button_Click"/>
+            <Label FontSize="20" Content="注意：演示数据库操作之前，请先点击初始化数据！" HorizontalAlignment="Left" Margin="67,395,0,0" VerticalAlignment="Top" Width="527" Foreground="#FFEB1212"/>
+            <Button Tag="E6" Content="LINQ to Entities 操作数据库综合举例" HorizontalAlignment="Left" Margin="201,347,0,0" VerticalAlignment="Top" Width="382" FontSize="20" Click="Button_Click"/>
+
+        </Grid>
+    </Grid>
+</Window>

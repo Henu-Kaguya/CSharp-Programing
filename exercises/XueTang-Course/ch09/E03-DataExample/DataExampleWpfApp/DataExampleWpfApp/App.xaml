@@ -1,0 +1,14 @@
+﻿<Application x:Class="DataExampleWpfApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DataExampleWpfApp"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <DataTemplate x:Key="BirthDateTemplate">
+            <TextBlock Text="{Binding Chushengriqi,StringFormat={}{0:yyyy-MM-dd}}"></TextBlock>
+        </DataTemplate>
+        <DataTemplate x:Key="PhotoTemplate">
+            <Image Source="{Binding Photo}" Width="20"></Image>
+        </DataTemplate>
+    </Application.Resources>
+</Application>

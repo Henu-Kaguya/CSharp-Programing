@@ -1,0 +1,27 @@
+﻿<Window x:Class="E02_LayoutControlExample.StackPanelAndWrapPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:E02_LayoutControlExample"
+        mc:Ignorable="d"
+        Title="StackPanelAndWrapPanel" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" Name="StackPanel1" VerticalAlignment="Center" Background="LightPink" Margin="119,131,553,167" Height="121" Width="100">
+            <Button Margin="10">按钮1</Button>
+            <Button Margin="10">按钮2</Button>
+            <Button Margin="10">按钮3</Button>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" Name="StackPanel2" VerticalAlignment="Center" Background="LightGreen" Margin="394,132,214.333,228.667" Height="60" Width="185" Orientation="Horizontal">
+            <Button Margin="10">按钮4</Button>
+            <Button Margin="10">按钮5</Button>
+            <Button Margin="10">按钮6</Button>
+        </StackPanel>
+
+        <WrapPanel HorizontalAlignment="Center" Name="wrapPanel1" VerticalAlignment="Center" Background="LightBlue" Margin="394,264,214.333,96.667" Height="60" Width="185" Orientation="Horizontal">
+            <Button Margin="10">按钮7</Button>
+            <Button Margin="10">按钮8</Button>
+            <Button Margin="10">按钮9</Button>
+        </WrapPanel>
+    </Grid>
+</Window>

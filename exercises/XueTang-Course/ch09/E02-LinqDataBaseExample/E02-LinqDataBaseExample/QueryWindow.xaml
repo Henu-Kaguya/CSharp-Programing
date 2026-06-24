@@ -1,0 +1,45 @@
+﻿<Window x:Class="E02_LinqDataBaseExample.QueryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:E02_LinqDataBaseExample"
+        mc:Ignorable="d"
+        Title="QueryWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="LINQ基本用法。" FontSize="20" HorizontalAlignment="Center" />
+            <Separator Background="Red" Margin="0 10"/>
+            <TabControl Margin="20 0">
+                <TabItem Header="from-查询单个表">
+                    <StackPanel>
+                        <TextBlock Text="学生基本信息表（Student）："/>
+                        <DataGrid Name="dataGrid_from1"/>
+                        <TextBlock Text="课程编码对照表（KC）："/>
+                        <DataGrid Name="dataGrid_from2"/>
+                        <TextBlock Text="学生成绩汇总表（CJ）："/>
+                        <DataGrid Name="dataGrid_from3"/>
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="from-查询多个表">
+                    <DataGrid Name="dataGrid_from4"/>
+                </TabItem>
+                <TabItem Header="where">
+                    <DataGrid Name="dataGrid_where"/>
+                </TabItem>
+                <TabItem Header="orderby">
+                    <DataGrid Name="dataGrid_orderby"/>
+                </TabItem>
+                <TabItem Header="group（按性别分组）">
+                    <StackPanel Name="stackPanel_group"/>
+                </TabItem>
+                <TabItem Header="select">
+                    <StackPanel>
+                        <DataGrid Name="dataGrid_select"/>
+                        <TextBlock Name="textBlock_select" Margin="0 10"/>
+                    </StackPanel>
+                </TabItem>
+            </TabControl>
+        </StackPanel>
+    </Grid>
+</Window>

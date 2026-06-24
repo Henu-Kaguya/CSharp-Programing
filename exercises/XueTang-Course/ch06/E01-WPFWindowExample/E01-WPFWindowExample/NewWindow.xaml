@@ -1,0 +1,13 @@
+﻿<Window x:Class="E01_WPFWindowExample.NewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:E01_WPFWindowExample"
+        mc:Ignorable="d"
+        Title="NewWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="This is a new Window！" HorizontalAlignment="Left" Margin="156,148,0,0" VerticalAlignment="Top" Width="475" Height="79" FontSize="20" FontWeight="Bold" Foreground="#FFEA1D1D"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,44 @@
+﻿<Window x:Class="E02_LayoutControlExample.DockPanelExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:E02_LayoutControlExample"
+        mc:Ignorable="d"
+        Title="DockPanelExample" Height="450" Width="800">
+    <DockPanel>
+        <TextBlock DockPanel.Dock="Top" Text="DockPanel基本用法"/>
+        <WrapPanel Background="GhostWhite">
+            <WrapPanel.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="Background" Value="#FFF3D3C6"/>
+                    <Setter Property="VerticalContentAlignment" Value="Center"/>
+                </Style>
+            </WrapPanel.Resources>
+            <GroupBox Header="上下型" Margin="10">
+                <DockPanel>
+                    <TextBlock DockPanel.Dock="Top" Height="30" Background="#FF4078EE" Text="Top"/>
+                    <Label Content="最后一个元素填充剩余的全部空间"/>
+                </DockPanel>
+            </GroupBox>
+            <GroupBox Header="左右型" Margin="10">
+                <DockPanel>
+                    <TextBlock Background="#FF4078EE" Width="30" Text="Left"/>
+                    <Label Content="最后一个元素填充剩余的全部空间"/>
+                </DockPanel>
+            </GroupBox>
+            <GroupBox Header="综合型" Margin="10">
+                <DockPanel>
+                    <TextBlock DockPanel.Dock="Top" Background="#FF4078EE">Top</TextBlock>
+                    <TextBlock DockPanel.Dock="Top" Background="#FF32CCE4">Top</TextBlock>
+                    <TextBlock DockPanel.Dock="Bottom" Background="#FF4078EE">Bottom</TextBlock>
+                    <TextBlock Width="50" DockPanel.Dock="Left" Background="LightGreen">Left</TextBlock>
+                    <TextBlock Width="50" DockPanel.Dock="Right" Background="LightGreen">Right</TextBlock>
+                    <TextBlock DockPanel.Dock="Top" Background="Yellow">Top</TextBlock>
+                    <TextBlock DockPanel.Dock="Bottom" Background="Yellow">Bottom</TextBlock>
+                    <Label Height="80" Content="最后一个元素填充剩余的全部空间"/>
+                </DockPanel>
+            </GroupBox>
+        </WrapPanel>
+    </DockPanel>
+</Window>

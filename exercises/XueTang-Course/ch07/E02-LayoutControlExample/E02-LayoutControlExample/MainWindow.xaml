@@ -1,0 +1,18 @@
+﻿<Window x:Class="E02_LayoutControlExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:E02_LayoutControlExample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Tag="E1" Content="Canvas举例" HorizontalAlignment="Left" Margin="201,54,0,0" VerticalAlignment="Top" Width="382" FontSize="20" Click="Button_Click"/>
+        <Button Tag="E2" Content="DockPanel举例" HorizontalAlignment="Left" Margin="201,117,0,0" VerticalAlignment="Top" Width="382" FontSize="20" Click="Button_Click"/>
+        <Button Tag="E3" Content="Grid举例" HorizontalAlignment="Left" Margin="201,178,0,0" VerticalAlignment="Top" Width="382" FontSize="20" Click="Button_Click"/>
+        <Button Tag="E4" Content="StackPanel和WrapPanel举例" HorizontalAlignment="Left" Margin="201,229,0,0" VerticalAlignment="Top" Width="382" FontSize="20" Click="Button_Click"/>
+        <Button Tag="E5" Content="GroupBox举例" HorizontalAlignment="Left" Margin="201,286,0,0" VerticalAlignment="Top" Width="382" FontSize="20" Click="Button_Click"/>
+        <Button Tag="E6" Content="Border举例" HorizontalAlignment="Left" Margin="201,338,0,0" VerticalAlignment="Top" Width="382" FontSize="20" Click="Button_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="E02_LayoutControlExample.BorderExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:E02_LayoutControlExample"
+        mc:Ignorable="d"
+        Title="BorderExample" Height="450" Width="800">
+    <Grid>
+        <Border BorderThickness="5" BorderBrush="Green" Width="140" Height="70" CornerRadius="20">
+            <StackPanel Margin="5" Orientation="Horizontal" Background="#FF2E3FF0">
+                <Ellipse Margin="5 0 0 0" Fill="Red" Width="50" Height="50"></Ellipse>
+                <Label Foreground="white" VerticalAlignment="Center" Margin="5 0 0 0">确定</Label>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
