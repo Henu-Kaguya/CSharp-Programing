@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="175*"/>
+            <ColumnDefinition Width="89*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="datagrid" HorizontalAlignment="Left" Height="262" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" Grid.ColumnSpan="2"/>
+        <Button Content="QueryAll" Tag="1" Click="Button_Click" HorizontalAlignment="Left" Margin="31,304,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="QueryZhang" Tag="2" Click="Button_Click"  HorizontalAlignment="Left" Margin="130,304,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="QueryMale" Tag="3" Click="Button_Click"  HorizontalAlignment="Left" Margin="229,304,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Insert" Tag="4" Click="Button_Click_1" HorizontalAlignment="Left" Margin="339,304,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Update" Tag="5" Click="Button_Click_1" HorizontalAlignment="Left" Margin="450,304,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2"/>
+        <Button Content="Delete" Tag="6" Click="Button_Click_1" HorizontalAlignment="Left" Margin="52.121,304,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1"/>
+
+    </Grid>
+</Window>

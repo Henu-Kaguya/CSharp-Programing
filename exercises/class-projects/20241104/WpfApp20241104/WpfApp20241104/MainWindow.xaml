@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfApp20241104.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp20241104"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox Name="listbox" HorizontalAlignment="Left" Height="317" Margin="17,12,0,0" VerticalAlignment="Top" Width="748"/>
+        <Button Content="获得本机信息" Click="Button_Click" HorizontalAlignment="Left" Margin="54,365,0,0" VerticalAlignment="Top" Width="101" Height="25"/>
+        <Button Content="显示磁盘驱动器" Click="Button_Click_1" HorizontalAlignment="Left" Margin="202,365,0,0" VerticalAlignment="Top" Width="112" Height="25"/>
+        <Button Content="Path类用法演示" Click="Button_Click_2" HorizontalAlignment="Left" Margin="348,364,0,0" VerticalAlignment="Top" Width="112" Height="25"/>
+
+    </Grid>
+</Window>
