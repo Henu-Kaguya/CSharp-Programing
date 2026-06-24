@@ -1,0 +1,28 @@
+﻿<Window x:Class="T06_02.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T06_02"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FF16ABDC"/>
+                <GradientStop Color="#FF1ECAD5" Offset="1"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <DataGrid Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Height="285" VerticalAlignment="Top" AutoGenerateColumns="False" Margin="98,115,98,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="学号" Binding="{Binding Id}" />
+                <DataGridTextColumn Header="姓名" Binding="{Binding Name}" />
+                <DataGridTextColumn Header="性别" Binding="{Binding Sex}" />
+                <DataGridTextColumn Header="专业" Binding="{Binding Major}" />
+                <DataGridTextColumn Header="宿舍" Binding="{Binding Dormitory}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="学生入住信息一览表" HorizontalAlignment="Center" Margin="0,59,0,0" VerticalAlignment="Top" FontSize="36"/>
+
+    </Grid>
+</Window>

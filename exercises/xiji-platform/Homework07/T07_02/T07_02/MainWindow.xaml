@@ -1,0 +1,23 @@
+﻿<Window x:Class="T07_02.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T07_02"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FF3FE7ED" Offset="1"/>
+                <GradientStop Color="#FF36B4FF" Offset="0"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Button Name="Font_Add" Content="增大字体" HorizontalAlignment="Left" Margin="215,285,0,0" VerticalAlignment="Top" Height="30" Width="69" Click="Font_Add_Click"/>
+        <Button Name="Font_Shrink" Content="缩小字体" HorizontalAlignment="Left" Margin="385,285,0,0" VerticalAlignment="Top" Height="30" Width="69" Click="Font_Shrink_Click" IsEnabled="False"/>
+        <Button Name="Clolor_Change" Content="改变字体颜色" HorizontalAlignment="Left" Margin="540,285,0,0" VerticalAlignment="Top" Height="30" Width="110" Click="Clolor_Change_Click"/>
+        <Label Name="TestText" Content="字体大小为12, 字体颜色为#FF000000" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top"/>
+        <!--<Label Name="Show_Info" Content="字体大小为: 12 px, 字体颜色为 RGB : #FF000000" HorizontalAlignment="Left" Margin="215,245,0,0" VerticalAlignment="Top" Width="435"/>-->
+
+    </Grid>
+</Window>
