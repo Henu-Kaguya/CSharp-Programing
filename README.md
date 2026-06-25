@@ -15,3 +15,8 @@
   - [xiji-platform/](./exercises/xiji-platform): 希冀平台课后编程作业
 - [notes/](./notes): 课程笔记与大纲说明
 - [slides/](./slides): 课程教学课件 (PPT)
+
+
+## 开源协议 / License
+
+本项目采用 [CC BY-NC-SA 4.0 (署名-非商业性使用-相同方式共享)](LICENSE) 许可协议。
