@@ -4,7 +4,7 @@
 
 2024年下学期选的C#，基本上包含了各方面的资料，有啥不懂的可以问我。
 
-期末大作业项目我主页也有：[BangumiMemoryManagementSystem](https://github.com/Sonder9999/BangumiMemoryManagementSystem)
+期末大作业项目我主页也有：[BangumiMemoryManagementSystem](https://github.com/chlchi/BangumiMemoryManagementSystem)
 
 ## 目录结构
 
